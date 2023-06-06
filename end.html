@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bienestar Quiz | Final</title>
+    <link rel="stylesheet" href="/css/style.css" />
+  </head>
+  <body>
+    <!-- HEADER -->
+
+    <div class="cont-header">
+      <div class="header">
+        <div class="logo" id="eemb">
+          <img src="/img/esmb-blanco.png" alt="" />
+        </div>
+        <div class="logo" id="hseq"><img src="/img/hseq.png" alt="" /></div>
+      </div>
+    </div>
+
+    <!-- GAME -->
+    <div class="container">
+      <div id="end" class="flex-center flex-column">
+        <h2 id="end-text">¡Tu Puntaje Final!</h2>
+        <h1 id="finalScore">0</h1>
+        <form class="end-form-container">
+          <h2 id="end-text">
+            Escribe tu nombre completo para guardar tu puntaje
+          </h2>
+          <input
+            type="text"
+            name="name"
+            id="username"
+            placeholder="Ingresa tu nombre completo"
+          />
+          <button
+            class="btn"
+            type="submit"
+            onclick="saveHighScore(event)"
+            id="saveScoreBtn"
+            disabled
+          >
+            Guardar
+          </button>
+        </form>
+        <a href="/juego.html" class="btn">Reiniciar</a>
+        <!-- <h2 id="registro">Resgistra tu puntaje:</h2>
+        <a href="https://forms.gle/uDZdd831vJQFvz199" class="btn">Registro</a> -->
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <div class="cont-footer">
+      <div class="footer">
+        <div class="logo shield"><img src="/img/aernma.png" alt="" /></div>
+        <div class="logo bolivar"><img src="/img/bolivar.png" alt="" /></div>
+      </div>
+    </div>
+
+    <!-- SCRIPT -->
+    <script src="/js/end.js"></script>
+    <script type="module" src="/js/firebase.js"></script>
+  </body>
+</html>

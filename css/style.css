@@ -1,0 +1,252 @@
+/*   GENERAl   */
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap");
+:root {
+  --yellow: #ffe16f;
+  --red: #bf4659;
+  --blue: #05b1e2;
+  --grey: #4e4d4d;
+  --black: #3c3c3b;
+  --white: #fff;
+  --green: #009056;
+  --green2: #71c93e;
+  --greytransp: rgba(0, 0, 0, 0.25);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  background-image: url(/img/bg.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  overflow: hidden;
+}
+
+h1 {
+  font-size: 4rem;
+  color: var(--yellow);
+  margin-bottom: 5rem;
+  text-shadow: 5px 5px 0 var(--greytransp);
+  text-align: center;
+}
+
+h2 {
+  font-size: 2rem;
+  margin-bottom: 1.5rem;
+  text-shadow: 4px 4px 0 var(--greytransp);
+}
+
+.cont-header {
+  width: 100%;
+  height: 12%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 65%;
+  height: 100%;
+}
+
+.container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.flex-column {
+  display: flex;
+  flex-direction: column;
+}
+
+.flex-center {
+  justify-content: center;
+  align-items: center;
+}
+
+.justify-center {
+  justify-content: center;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.hidden {
+  display: none;
+}
+
+.img-index {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 5rem;
+}
+.img-index img {
+  width: 100%;
+  filter: drop-shadow(5px 5px 0 var(--greytransp));
+}
+
+.btn {
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  padding: 1.2rem 0;
+  width: 20rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--green);
+  border-radius: 2rem;
+  box-shadow: 5px 6px 0 var(--greytransp);
+  transition: all 0.2s;
+  transform: scale(1);
+}
+
+.btn:hover {
+  background-color: var(--yellow);
+  color: var(--black);
+  transform: scale(1.05);
+}
+
+.btn:active {
+  background-color: var(--yellow);
+  color: var(--black);
+  transform: scale(0.95);
+  box-shadow: 0 0 0 var(--greytransp);
+}
+
+.btn:disabled {
+  cursor: not-allowed;
+  background-color: var(--grey);
+  color: var(--black);
+  transform: none;
+}
+
+#puntajes-btn {
+  background: var(--yellow);
+  color: var(--black);
+}
+
+#puntajes-btn:hover {
+  background-color: var(--red);
+  color: var(--white);
+  transform: scale(1.05);
+}
+
+#puntajes-btn:active {
+  background-color: var(--red);
+  color: var(--white);
+  transform: scale(0.95);
+  box-shadow: 0 0 0 var(--greytransp);
+}
+
+.cont-footer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 12%;
+}
+
+.footer {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+}
+
+.footer img {
+  width: 250px;
+  height: auto;
+  align-self: baseline;
+}
+
+/* End Page CSS */
+
+.end-form-container {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 30rem;
+}
+
+input {
+  margin-bottom: 0rem;
+  width: 90%;
+  padding: 1rem;
+  font-size: 1.4rem;
+  box-shadow: 6px 6px 0 var(--greytransp);
+  border-radius: 2rem;
+  border: none;
+}
+
+input::placeholder {
+  color: var(--grey);
+  text-align: center;
+}
+
+#username {
+  margin-bottom: 2rem;
+  width: 100%;
+  outline: none;
+  text-align: center;
+}
+
+#end-text {
+  font-size: 1.4rem;
+  color: var(--white);
+  text-align: center;
+}
+
+#saveScoreBtn {
+  border: none;
+}
+
+#registro {
+  font-size: 1.4rem;
+  color: var(--white);
+  text-align: center;
+}
+
+#finalScore {
+  margin-bottom: 1rem;
+}
+
+@media screen and (max-width: 600px) {
+  .header {
+    width: 98%;
+  }
+
+  .footer {
+    width: 100%;
+  }
+
+  .footer img {
+    width: 220px;
+  }
+}
