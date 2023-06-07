@@ -1,50 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Bienestar Quiz | Final</title>
     <link rel="stylesheet" href="/css/style.css" />
-  </head>
-  <body>
+</head>
+
+<body>
     <!-- HEADER -->
 
     <div class="cont-header">
-      <div class="header">
-        <div class="logo" id="eemb"></div>
-      </div>
+        <div class="header">
+            <div class="logo" id="eemb"></div>
+        </div>
     </div>
 
     <!-- GAME -->
     <div class="container">
-      <div id="end" class="flex-center flex-column">
-        <h2 id="end-text">¡Tu Puntaje Final!</h2>
-        <h1 id="finalScore">0</h1>
-        <form class="end-form-container">
-          <h2 id="end-text">
-            Escribe tu nombre completo para guardar tu puntaje
-          </h2>
-          <input
-            type="text"
-            name="name"
-            id="username"
-            placeholder="Ingresa tu nombre completo"
-          />
-          <button class="btn" type="submit" id="saveScoreBtn">Guardar</button>
-        </form>
-        <a href="/juego.html" class="btn">Reiniciar</a>
-      </div>
+        <div id="end" class="flex-center flex-column">
+            <form class="end-form-container" id="task-form">
+                <h2 id="end-text">¡Tu Puntaje Final!</h2>
+                <input id="finalScore"></input>
+                <h2 id="end-text">
+                    Escribe tu nombre completo para guardar tu puntaje
+                </h2>
+                <input id="username" placeholder="Ingresa tu nombre completo" />
+                <button class="btn" id="saveScoreBtn">Guardar</button>
+            </form>
+            <a href="/juego.html" class="btn">Reiniciar</a>
+        </div>
     </div>
 
     <!-- FOOTER -->
     <div class="cont-footer">
-      <div class="footer">
-        <div class="logo bolivar"><img src="/img/bolivar.png" alt="" /></div>
-      </div>
+        <div class="footer">
+            <div class="logo bolivar"><img src="/img/bolivar.png" alt="" /></div>
+        </div>
     </div>
 
     <!-- SCRIPT -->
     <script type="module" src="/js/end.js"></script>
-  </body>
+</body>
+
 </html>
