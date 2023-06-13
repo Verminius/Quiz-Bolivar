@@ -1,25 +1,25 @@
 import { saveTask } from "./firebase.js";
 
-window.addEventListener("DOMContentLoaded", () => {
-
-});
-
-
 const mostRecentScore = localStorage.getItem("mostRecentScore");
 const finalScore = document.querySelector("#finalScore");
 
 finalScore.value = mostRecentScore;
 
-// const username = document.querySelector("#username");
-// const saveScoreBtn = document.querySelector("#saveScoreBtn");
+const username = document.querySelector("#username");
+const saveScoreBtn = document.querySelector("#saveScoreBtn");
 
-const taskForm = document.getElementById('task-form');
-taskForm.addEventListener('submit', (e) => {
-    e.preventDefault()
+username.addEventListener("keyup", () => {
+  saveScoreBtn.disabled = !username.value;
+});
 
-    const score = taskForm['finalScore']
-    const name = taskForm['username']
+const taskForm = document.getElementById("task-form");
+taskForm.addEventListener("submit", (e) => {
+  e.preventDefault();
 
-    saveTask(name.value, score.value)
+  const name = taskForm["username"];
+  const score = taskForm["finalScore"];
 
-})
+  saveTask(name.value, score.value);
+
+  taskForm.reset();
+});

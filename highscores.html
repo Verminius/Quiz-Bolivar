@@ -11,32 +11,28 @@
   <body>
     <!-- HEADER -->
     <div class="cont-header">
-      <div class="header">
-        <div class="logo" id="eemb">
-          <img src="/img/esmb-blanco.png" alt="" />
-        </div>
-        <div class="logo" id="hseq"><img src="/img/hseq.png" alt="" /></div>
-      </div>
+      <div class="header"></div>
     </div>
 
     <!-- HIGHSCORES -->
-    <div class="container">
-      <div id="highScoresList" class="flex-center flex-column">
-        <!-- <h1 id="finalScore">Puntajes</h1>
-        <ul id="highScoreList"></ul> -->
+    <div class="high-score-container">
+      <div class="score-tittle">
+        <h1>Puntajes</h1>
       </div>
-      <a href="/index.html" class="btn">Inicio</a>
+      <div id="highScoresList"></div>
+      <div class="btn-container">
+        <a href="/index.html" class="btn-inicio">Inicio</a>
+      </div>
     </div>
 
     <!-- FOOTER -->
     <div class="cont-footer">
       <div class="footer">
-        <div class="logo shield"><img src="/img/aernma.png" alt="" /></div>
         <div class="logo bolivar"><img src="/img/bolivar.png" alt="" /></div>
       </div>
     </div>
 
     <!-- SCRIPT -->
-    <script src="/js/highscores.js"></script>
+    <script type="module" src="/js/highscores.js"></script>
   </body>
 </html>

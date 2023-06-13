@@ -2,15 +2,97 @@ body {
   color: var(--white);
 }
 
-#highScoreList {
+.high-score-container {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  max-width: 80rem;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+.score-tittle {
+  width: 100%;
+  height: 10%;
+}
+
+#highScoresList {
+  width: 80%;
+  height: 70%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: center;
   list-style: none;
-  margin-bottom: 3rem;
   text-align: center;
   font-weight: 700;
   text-shadow: 4px 4px 0 var(--greytransp);
+  padding: 10px 0;
+  border-top: 1px solid var(--yellow);
+  border-bottom: 1px solid var(--yellow);
+  overflow-y: scroll;
+}
+
+#highScoresList::-webkit-scrollbar {
+  -webkit-appearance: none;
+}
+
+#highScoresList::-webkit-scrollbar:vertical {
+  width: 10px;
+  color: var(--green2);
+}
+
+#highScoresList::-webkit-scrollbar-thumb {
+  background-color: var(--green2);
+  border-radius: 20px;
+}
+
+.score-item h2 {
+  text-align: center;
 }
 
 .high-score {
   font-size: 2rem;
   margin-bottom: 0.5rem;
+}
+
+.btn-container {
+  width: 100%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-inicio {
+  font-size: 1.8rem;
+  font-weight: 900;
+  letter-spacing: 0.1rem;
+  padding: 1.2rem 0;
+  width: 20rem;
+  text-align: center;
+  margin-bottom: 2rem;
+  text-decoration: none;
+  color: var(--white);
+  background-color: var(--green);
+  border-radius: 2rem;
+  box-shadow: 5px 6px 0 var(--greytransp);
+  transition: all 0.2s;
+  transform: scale(1);
+}
+
+.btn-inicio:hover {
+  background-color: var(--yellow);
+  color: var(--black);
+  transform: scale(1.05);
+}
+
+.btn-inicio:active {
+  background-color: var(--yellow);
+  color: var(--black);
+  transform: scale(0.95);
+  box-shadow: 0 0 0 var(--greytransp);
 }
